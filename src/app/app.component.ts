@@ -8,10 +8,8 @@ import {FriendListComponent} from "./friend-list/friend-list.component";
             <app-friend-list></app-friend-list>
         </div>
     `,
-    styles: [],
     standalone: true,
     imports: [FriendListComponent]
 })
 export class AppComponent {
-    title = 'ng-chat-box';
 }

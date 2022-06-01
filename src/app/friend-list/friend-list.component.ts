@@ -20,9 +20,7 @@ import {UserOnlineStore} from "../stores/user-online.store";
                 </div>
             </div>
 
-            <div>
-                <app-chat-box *ngFor="let chatbox of vm.usersChatBox" [user]="chatbox"></app-chat-box>
-            </div>
+            <app-chat-box class="d-block" *ngFor="let chatbox of vm.usersChatBox" [user]="chatbox"></app-chat-box>
         </ng-container>
     `,
     changeDetection: ChangeDetectionStrategy.OnPush,
